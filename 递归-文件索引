@@ -1,0 +1,8 @@
+def print_directory_contents(spath):
+  import os,os.path
+  for sChild in os.listdir(spath):
+      sChildpath=os.path.join(spath, sChild)
+      if os.path.isdir(sChildpath):
+        print_directory_contents(sChildpath)
+       else:
+        print sChildpath
