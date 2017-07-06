@@ -1,0 +1,13 @@
+求s=a+aa+aaa+aaaa+aa...a的值，其中a是一个数字。
+例如2+22+222+2222+22222(此时共有5个数相加)，a和数字个数n由键盘输入。
+
+sum=0
+b=0
+n=int(raw_input('n:\n'))
+a=int(raw_input('a:\n'))
+b=a
+for i in range(n):
+    sum=sum+b
+    b=b*10+a
+    print('%d+')%b
+print sum
